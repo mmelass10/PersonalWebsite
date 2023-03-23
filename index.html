@@ -22,10 +22,18 @@
 			max-width: 300px;
 			border-radius: 50%;
 		}
-        #flags {
+        #flags-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
             display: flex;
-            justify-content: flex-start;
             align-items: center;
+        }
+        #flags {
+            font-size: 0.8em;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
         }
         #flags img {
             height: 20px;
@@ -34,10 +42,14 @@
 	</style>
 </head>
 <body style="text-align: center;">
-	<div class="container">
+    <div id="flags-container">
         <div id="flags">
-            <p>I'm a proud dual citizen of both the United States and Canada! 🇨🇦 🇺🇸</p>
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/271/flag-united-states_1f1fa-1f1f8.png" alt="US Flag">
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/271/flag-canada_1f1e8-1f1e6.png" alt="Canada Flag">
+            <p>I'm a proud dual citizen of both the United States and Canada!</p>
         </div>
+    </div>
+	<div class="container" style="margin-top: 70px;">
 		<img class="image" src="Adam+Altmejd.JPG" alt="Adam Altmejd">
 		<table width="100%">
 		  <tr>
@@ -52,7 +64,4 @@
 		<h2>Resume</h2>
 		<p>Download my resume <a href="#">here</a>.</p>
 		<h2>Contact</h2>
-		<p>You can reach me at <a href="mailto:example@gmail.com">example@gmail.com</a>.</p>
-	</div>
-</body>
-</html>
+		<p>You can reach me at <a href="mailto:example@gmail
